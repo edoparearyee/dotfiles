@@ -54,9 +54,10 @@ export EDITOR="nano"
 export ZSH_DISABLE_COMPFIX=true
 
 export GO_PATH="/usr/local/go/bin"
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+# Download JDK from https://www.oracle.com/uk/java/technologies/javase-downloads.html
+export JAVA_HOME="$(/usr/libexec/java_home)"
 export ANDROID_HOME="$HOME/Library/Android/sdk/platform-tools"
-export YARN_BIN="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export YARN_BIN="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
 export PATH="$PATH:$GO_PATH:$JAVA_HOME:$ANDROID_HOME:$YARN_BIN"
 
 export SPACESHIP_TIME_SHOW=false
